@@ -21,15 +21,29 @@ const navigator = {
 	}
 };
 
+// base case/happy path
 test(async t => {
 	t.plan(1);
 	const pl = await new PromisedLocation({}, Promise, navigator);
-	t.same(pl, position);
+	t.same(pl, position, 'Position returned is correct (native Promise)');
 });
 
+// Alternate promise implementation
+// using es6-promise
 test(async t => {
 	t.plan(2);
-	t.ok(es6Promise);
+	t.ok(es6Promise, 'Alternate promise impl is ok');
 	const pl = await new PromisedLocation({}, es6Promise, navigator);
-	t.same(pl, position);
+	t.same(pl, position, 'Position returned is correct (es6-promise)');
+});
+
+// missing environment
+test(async t => {
+	t.plan(1);
+	const badNavigator = {
+		geolocation: null
+	};
+	t.throws(new PromisedLocation({}, Promise, badNavigator),
+		Error,
+		'Throws geolocation error when environment not sufficient');
 });
