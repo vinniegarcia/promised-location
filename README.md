@@ -40,6 +40,7 @@ locator
 	maximumAge: 0
   }
   ```
+
 ## Questions? Comments? Fixes?
 
 File an [issue](https://github.com/vinniegarcia/promised-location/issues) or submit a [pull request](https://github.com/vinniegarcia/promised-location/pulls)!
