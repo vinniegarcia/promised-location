@@ -1,0 +1,7 @@
+src
+test
+coverage
+.coveralls.yml
+.travis.yml
+.gitignore
+.nyc_output
