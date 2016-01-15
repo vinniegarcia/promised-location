@@ -1,4 +1,9 @@
 # promised-location
+[![npm version](https://badge.fury.io/js/promised-location.svg)](http://badge.fury.io/js/promised-location)
+[![travis build information](https://api.travis-ci.org/vinniegarcia/promised-location.svg)](https://travis-ci.org/vinniegarcia/promised-location)
+[![Coverage Status](https://coveralls.io/repos/vinniegarcia/promised-location/badge.svg)](https://coveralls.io/r/vinniegarcia/promised-location)
+
+
 Promise-compatible version of navigator.geolocation. Compatible with react native!
 
 ## Usage
