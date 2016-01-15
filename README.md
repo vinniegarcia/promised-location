@@ -1,4 +1,4 @@
-# react-native-promise-location
+# promised-location
 Promise-compatible version of navigator.geolocation. Compatible with react native!
 
 ## Usage
